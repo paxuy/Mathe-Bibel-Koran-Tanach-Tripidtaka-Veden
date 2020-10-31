@@ -1,0 +1,199 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{calc}
+%\usepackage{showframe}
+
+\usepackage{ulem}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage[a4paper, left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\def\AUTHOR{Paul Schillinger}
+\author{\AUTHOR}
+\def\MYTITLE{Mathe-Bibel-Koran-Tanach-Tripi\d{t}aka-Veden v1.0}
+\title{\MYTITLE}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\rhead[]{\AUTHOR}
+\lhead[]{\MYTITLE}
+
+\newcommand{\sidebyside}[3]{
+\newlength{\lenA}
+\setlength{\lenA}{#1\linewidth}
+\begin{figure}[h]
+\begin{subfigure}[t]{0.5\linewidth minus 1\lenA}
+#2
+\end{subfigure}%
+\hspace{2\lenA}
+\begin{subfigure}[t]{0.5\linewidth minus 1\lenA}
+#3
+\end{subfigure}
+\end{figure}
+}
+
+
+\newcommand{\sidebysideB}[2]{
+\begin{figure}[H]
+\begin{subfigure}[t]{0.5\linewidth}
+#1
+\end{subfigure}%
+\begin{subfigure}[t]{0.5\linewidth}
+#2
+\end{subfigure}
+\end{figure}
+}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section*{Grundlagen der Mathematik}
+\addcontentsline{toc}{section}{Grundlagen der Mathematik}
+\section{Grundrechenarten}
+\begin{figure}[h]
+	\begin{subfigure}[t]{0.5\linewidth}
+\subsection{Addition}
+Summand $+$ Summand $=$ Summe
+\subsection{Subtraktion}
+Minuend $-$ Subtrahend $=$ Differenz
+	\end{subfigure}%
+	\begin{subfigure}[t]{0.5\linewidth}
+\subsection{Multiplikation}
+Faktor $\cdot\,\mid\,\times$ Faktor $=$ Produkt
+\subsection{Division}
+Dividend\: $:\:\mid\,\div\,\mid\,/$ Divisor $=$ Quotient
+	\end{subfigure}
+\end{figure}
+\vspace{-1em}
+\section{Zahlenbereiche}
+\begin{figure}[h]
+	\begin{subfigure}[t]{0.5\linewidth}
+\subsection{Natürliche Zahlen}
+\subsubsection*{ohne Null}
+Mathematisches Symbol: $\mathbb{N}$
+\\
+Beispiele: $1;\,2;\,3;\,\ldots$
+\subsubsection*{mit Null}
+Mathematisches Symbol: $\mathbb{N}_{0}$
+\\
+Beispiele: $0;\,1;\,2;\,3;\,\ldots$
+\subsection{Ganze Zahlen}
+Mathematisches Symbol: $\mathbb{Z}$
+\\
+Beispiele: $\ldots;\,-2;\,-1;\,0;\,1;\,2;\,\ldots$
+\subsection{Gebrochene Zahlen}
+Mathematisches Symbol: $\mathbb{Q}^{+}$ oder $\mathbb{Q}^{*}$
+\\
+Beispiele: $\frac{1}{2};\,1;\,\frac{2}{7};\,\ldots$
+
+	\end{subfigure}%
+		%\hspace{0.04\linewidth}
+	\begin{subfigure}[t]{0.5\linewidth}
+\subsection{Rationale Zahlen}
+Mathematisches Symbol: $\mathbb{Q}$
+\\
+Beispiele: $\ldots;\,\frac{1}{2};\,-\frac{1}{2};\,1;\,-1;\,\frac{2}{7};\,-\frac{2}{7};\,\ldots$
+\subsection{Reele Zahlen}
+Mathematisches Symbol: $\mathbb{R}$
+\\
+Beispiele: $\sqrt{2};\,\pi;\,e;\,\ldots$
+\subsection{Komplexe Zahlen}
+Mathematisches Symbol: $\mathbb{C}$
+\\
+Beispiele: $i;\,7+3i;\,3-4i;\,\ldots$
+	\end{subfigure}
+\end{figure}
+\vspace{-1em}
+
+\section{Rechengesetze}
+\subsection{Rechenreihenfolge}
+\begin{enumerate}
+\item Klammer
+\item Potenz
+\item Punkt (Multiplikation und Division)
+\item Strich (Addition und Subtraktion)
+\item Links nach Rechts
+\end{enumerate}
+
+\newpage
+\subsection{Assoziativgesetz (Verknüpfungsgesetz)}
+Gilt nur bei Addition und Multiplikation, nicht bei Subtraktion und Division.\\
+\vspace{-2em}
+\begin{table}[h]
+\begin{tabular}{@{}lc}
+\rule{0pt}{1em}Addition: & $\left(a+b\right)+c=a+\left(b+c\right)=a+b+c$\\
+\rule{0pt}{1em}Multiplikation: & $\left(a\cdot b\right)\cdot c=a\cdot \left(b\cdot c\right)=a\cdot b\cdot c$
+\end{tabular}
+\end{table}
+\vspace{-1.5em}
+
+\subsection{Distributivgesetz (Verteilungsgesetz)}
+\vspace{-1em}
+\sidebysideB{
+Multiplikation:\\
+$a\cdot\left(b\pm c\right)=a\cdot b\pm a\cdot c$\\
+$\left(a\pm b\right)\cdot c=a\cdot c\pm b\cdot c$
+}{
+Division:\\
+\sout{$a\div\left(b\pm c\right)=a\div b\pm a\div c$}\\
+$\left(a\pm b\right)\div c=a\div c\pm b\div c$\quad{\footnotesize (s. \ref{Bruchgesetze}: Add/Sub)}
+}
+\subsection{Kommutativgesetz (Vertauschungsgesetz)}
+Gilt nur bei Addition und Multiplikation, nicht bei Subtraktion und Division.
+\sidebysideB{Addition:\qquad$a+b=b+a$}{Multiplikation:\qquad$a\cdot b=b\cdot a$}
+
+\section{Brüche}
+$\dfrac{\text{Dividend}}{\text{Divisor}} = \dfrac{\text{Zähler}}{\text{Nenner}} = \dfrac{\text{Z}}{\text{N}} = (\text{Z})\div(\text{N})\qquad \text{N}\neq0$, da nicht definiert
+
+
+
+
+
+
+
+%\newpage
+
+
+
+
+
+
+
+\vspace{-1em}
+\end{document}
+
+
+
+
+
+\begin{comment}
+\begin{figure}
+\begin{subfigure}[h]{0.5\linewidth}
+
+\end{subfigure}%
+%\hspace{0.04\linewidth}
+\begin{subfigure}[h]{0.5\linewidth}
+
+\end{subfigure}
+\end{figure}
+\vspace{-1em}
+\end{comment}
