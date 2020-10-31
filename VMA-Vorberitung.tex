@@ -35,21 +35,6 @@
 \rhead[]{\AUTHOR}
 \lhead[]{\MYTITLE}
 
-\newcommand{\sidebyside}[3]{
-\newlength{\lenA}
-\setlength{\lenA}{#1\linewidth}
-\begin{figure}[h]
-\begin{subfigure}[t]{0.5\linewidth minus 1\lenA}
-#2
-\end{subfigure}%
-\hspace{2\lenA}
-\begin{subfigure}[t]{0.5\linewidth minus 1\lenA}
-#3
-\end{subfigure}
-\end{figure}
-}
-
-
 \newcommand{\sidebysideB}[2]{
 \begin{figure}[H]
 \begin{subfigure}[t]{0.5\linewidth}
@@ -60,7 +45,6 @@
 \end{subfigure}
 \end{figure}
 }
-
 
 \begin{document}
 \maketitle
@@ -281,31 +265,5 @@ Beispiel:
 Beispiel:%
 \[\prod\limits_{i=1}^4 \frac{i}{i+1}=\frac{1}{2}\cdot\frac{2}{3}\cdot\frac{3}{4}\cdot\frac{4}{5}\]
 }
-
-%\newpage
-
-
-
-
-
-
-
 \vspace{-1em}
 \end{document}
-
-
-
-
-
-\begin{comment}
-\begin{figure}
-\begin{subfigure}[h]{0.5\linewidth}
-
-\end{subfigure}%
-%\hspace{0.04\linewidth}
-\begin{subfigure}[h]{0.5\linewidth}
-
-\end{subfigure}
-\end{figure}
-\vspace{-1em}
-\end{comment}
