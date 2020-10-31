@@ -1,0 +1,1 @@
+# Mathe-Bibel-Koran-Tanach-Tripidtaka-Veden
